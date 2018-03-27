@@ -1,4 +1,4 @@
-#Sticky Note App
+# Sticky Note App
 A small application built using the following libraries:
  - Electron
  - MongoDB
