@@ -1,3 +1,15 @@
+#Sticky Note App
+A small application built using the following libraries:
+ - Electron
+ - MongoDB
+ - Socket-io
+ - React
+
+ The main purpose of this application was to be a small replacement for e-mail, allowing people to quickly communicate
+ small messages to different users, and have it appear on their screen in the form of a sticky note.
+
+ Below is the electron quick start guide on how to get this running:
+
 # electron-quick-start
 
 **Clone and run for a quick way to see an Electron in action.**
