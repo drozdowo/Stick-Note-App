@@ -1,0 +1,101 @@
+/*
+  Flexbox Stuff:
+*/
+
+body{
+  background-color: transparent;
+  overflow: hidden;
+}
+
+.flex-wrapper{
+  display: flex;
+  height: calc(100% - 75px);
+  width: calc(100% - 5px);
+  overflow: hidden;
+  -webkit-app-region: drag;
+  box-shadow: 5px 5px 5px #000000;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  background-color: transparent;
+}
+
+.flex-header {
+    background-color: #eafdaf;
+    text-align: center;
+    height: 30px;
+    padding: 2px;
+    width: 100%;
+}
+
+.flex-content{
+  height: 300px;
+  text-align: center;
+  width: 100%;
+  -webkit-app-region: no-drag;
+  background-color: #fadfae;
+}
+
+.flex-footer {
+  background-color: #eafdaf;
+  text-align: center;
+  height: auto;
+  max-height: 80;
+  -webkit-app-region: no-drag;
+  width: 100%;
+}
+
+/*
+  Functional Stuff CSS:
+*/
+
+.navbar {
+  &-button{
+  background-color: #a2a3a6;
+  border: none;
+  font-family: 'Permanent Marker', cursive;
+  padding: 5px;
+  -webkit-app-region: no-drag;
+  transition: all 0.3s ease 0s;
+  &:hover{ background-color: #b2b2b3; }
+  }
+}
+
+.note {
+  background-color: #afdaef;
+  padding-top: 5px;
+  font-family: 'Permanent Marker', cursive;
+  &-p{
+    color: #daffae;
+    text-align: center;
+    text-decoration: underline;
+    font-family: inherit;
+  }
+}
+
+.messageUsers {
+  padding-top: 35px;
+  text-align: center;
+  width: 100%;
+  height: 635px;
+  background-color: white;
+}
+
+/*
+  Preventing this stuff from being dragged about!
+*/
+textarea {
+  resize: none;
+  -webkit-app-region: no-drag;
+}
+
+button {
+  -webkit-app-region: no-drag;
+}
+
+input {
+  -webkit-app-region: no-drag;
+}
+
+select {
+  -webkit-app-region: no-drag;
+}
